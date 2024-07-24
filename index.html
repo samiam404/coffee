@@ -11,27 +11,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             height: 100vh;
             margin: 0;
             background-color: #000;
             color: white;
         }
+        .button-container {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- The page content is now empty, as the widget will be floating -->
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ghostsinthemachine" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-    
-    <script>
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                var bmcBtn = document.querySelector('.bmc-btn');
-                if (bmcBtn) {
-                    bmcBtn.click();
-                }
-            }, 1000); // Wait for 1 second after the page loads
-        });
+    <script type="module">
+        import { app, analytics } from './firebase-init.js';
+        // You can now use Firebase services here
     </script>
+    <div class="button-container">
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ghostsinthemachine" data-color="#FFDD00" data-emoji=""  data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+    </div>
 </body>
 </html>
