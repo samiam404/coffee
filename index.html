@@ -22,5 +22,16 @@
 <body>
     <!-- The page content is now empty, as the widget will be floating -->
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ghostsinthemachine" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var bmcBtn = document.querySelector('.bmc-btn');
+                if (bmcBtn) {
+                    bmcBtn.click();
+                }
+            }, 1000); // Wait for 1 second after the page loads
+        });
+    </script>
 </body>
 </html>
